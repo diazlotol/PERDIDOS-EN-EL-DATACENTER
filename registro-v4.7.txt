@@ -1,0 +1,14 @@
+REGISTRO VERSION 4.7
+MODIFICACIONES SOBRE LA 4.6 (solo interior de la base, archivo public/index.html):
+1. CAPSULA MEDICA (x=160, entre la puerta y el generador de aire). Pod de vidrio con cruz roja, monitor de signos vitales (ECG + barra de vida), tanque de hielo con nivel real y tuberia.
+   - Al colocarse dentro (en el suelo, sin saltar) recupera 1 hp (medio corazon) cada 0.4 s.
+   - Consume hielo del inventario (barra o mochila): 1 hielo = 4 hp (2 corazones). Cura completa 20 hp = 5 hielos.
+   - Sin hielo no cura y avisa. Si se llena la vida, se detiene y no gasta mas.
+   - Visual: vidrio verde pulsante, niebla fria, corazones que suben, linea de escaneo, ECG acelerado, "-1 hielo" al consumir.
+2. MESA DE REPARACION DEL TRAJE (x=392, entre el aire y la mesa de trabajo). Mesa con casco de astronauta visible, monitor de defensa y brazo robotico de techo.
+   - Al colocarse sobre ella recupera +1 de defensa (🛡️) cada 1.2 s hasta el maximo. No consume recursos.
+   - Visual: rayo de escaneo, chispas del soldador, escudos que suben, casco con brillo y barrido en la visera. El casco muestra grietas segun el dano del traje y se "arreglan" al reparar.
+3. Ambas areas muestran etiqueta con estado (Recuperando / Reparando / Vida completa / Traje al 100%) y una marca en el piso (azul = libre, amarillo = dentro sin efecto, verde = activa). E acerca al centro del area.
+4. Cambio en una mecanica relacionada: la capsula de recarga (x=574) ya NO restaura la vida (S.hp=20 eliminado). Solo recarga energia y oxigeno. Asi la recuperacion de vida pasa por la nueva capsula (consume hielo).
+5. Sin cambios: regeneracion pasiva de vida en la base (1 hp cada 2 s), servidor, base de datos y formato de guardado (S.fac se agrega solo y es compatible con partidas anteriores).
+AJUSTES RAPIDOS: constante FAC en index.html -> { med:{tick:.4, per:4}, rep:{tick:1.2} } (velocidad y hielo por hp).

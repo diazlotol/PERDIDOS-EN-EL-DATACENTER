@@ -1,0 +1,6 @@
+REGISTRO VERSION 4.6
+MODIFICACIONES SOBRE LA 4.5:
+1. Alcance de picado reducido a un solo cuadro de distancia (REACH 5 -> 1.5, incluye los bloques contiguos y diagonales).
+2. Sonido de pasos metalicos nuevo: audioInit() desbloquea el audio con la primera tecla o toque; stepSnd(vol) mezcla golpe seco, thud grave y resonancias de placa de acero, alternando pie izquierdo y derecho.
+3. Golpe metalico mas fuerte al aterrizar de un salto dentro de la base.
+4. El nombre de la base pasa a ser solo "BASE" (titulo, menu, aviso de entrada, cartel exterior y cartel interior).

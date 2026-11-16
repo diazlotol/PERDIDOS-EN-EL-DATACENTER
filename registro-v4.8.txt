@@ -1,0 +1,9 @@
+REGISTRO VERSION 4.8
+MODIFICACIONES SOBRE LA 4.7 (solo public/index.html):
+1. MENU DE PAUSA (tecla Esc). Al jugar, si no hay ningun otro menu/modal abierto, Esc abre un menu de pausa con dos opciones:
+   - "Salir": guarda la partida (igual que el boton 💾 existente) y vuelve a la pantalla de menu principal.
+   - "Volver a jugar": cierra el menu y deja continuar jugando, sin perder progreso.
+2. Si el menu de pausa ya esta abierto y se vuelve a apretar Esc, el menu se cierra (equivale a "Volver a jugar").
+3. Se mantiene el comportamiento previo de Esc para otros modales (inventario, paneles, etc.): si cualquiera de esos esta abierto, Esc lo cierra como antes.
+4. Mientras el menu de pausa esta abierto, el movimiento/fisica del jugador se detiene (misma mecanica que ya usaba el inventario), pero el dibujo sigue actualizandose.
+5. Sin cambios en el servidor, base de datos ni formato de guardado.

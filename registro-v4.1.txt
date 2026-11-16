@@ -1,0 +1,7 @@
+REGISTRO BASE SHACKLETON - VERSION 4.1
+- Tras el login (o como invitado) se elige ambiente: Superficie lunar o Interior de la Base.
+- Interior funcional: movimiento propio (S.ix), puerta de salida, generador de aire y mesa de trabajo con tecla E.
+- Salir/entrar a la base reposiciona al jugador correctamente; en interior no se pica terreno invisible.
+- El invitado tambien pasa por el menu de ambientes.
+- El ambiente se guarda en la partida y se muestra en "Continuar".
+- Base v3.0: el archivo subido estaba vacio (0 bytes); no se pudo comparar.

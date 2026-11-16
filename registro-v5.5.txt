@@ -1,0 +1,1 @@
+REGISTRO 5.5: logo ajustado sobre los botones (no tapa el titulo); traduccion EN de guia, manual (sobrevivir/peligros/controles) y menu. Falta: items/herramientas (gItems/gTools), parrafos largos del menu, datos curiosos, menu de pausa.

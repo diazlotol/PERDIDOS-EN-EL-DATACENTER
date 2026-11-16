@@ -1,0 +1,9 @@
+REGISTRO BASE SHACKLETON - VERSION 4.3
+- Base externa e interna integradas desde base_shackleton_visual.js (puerta, aire, mesa + capsula de recarga que tambien repara el traje).
+- Pasos metalicos sintetizados (WebAudio): solo suenan dentro de la base.
+- Selector de color del traje tras elegir ambiente y antes de comenzar (8 colores + color libre), con vista previa animada. Se guarda en la partida.
+- Astronauta con animacion de caminar (8 cuadros) y salto (3 fases), procedural, listo para reemplazar por tus sprites.
+- Tiempos de picado: mano 8.5 s, pico 5.5 s, taladro 1.5 s (pala 7 s). Barra de progreso sobre el bloque.
+- Un solo panel solar (maximo 1 en el mundo).
+- Asteroides en lugares aleatorios: en la base -> emergencia "casco" reparable solo desde afuera con pinzas; en el panel -> se daña y se repara en la mesa; en otro lugar -> crater y onda de impacto.
+- Iconos: taladro 🤖->⚙️, panel danado 🪫->💥; el nombre del item aparece al seleccionarlo.

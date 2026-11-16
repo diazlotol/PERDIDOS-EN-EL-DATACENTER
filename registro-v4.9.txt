@@ -1,0 +1,7 @@
+REGISTRO VERSION 4.9
+MODIFICACIONES SOBRE LA 4.8 (solo public/index.html):
+1. DURACION DEL JUEGO: se redujo la duracion de cada dia para que la partida completa (7 dias) dure 18 minutos en total, en vez de 35 minutos.
+   - Constante DL (duracion de un dia en segundos reales) cambiada de 300 a 1080/7 (~154.3 s ≈ 2 min 34 s por dia).
+   - DAYS se mantiene en 7 (no cambia la cantidad de dias ni la condicion de victoria/derrota).
+2. BALANCE: la constante K (que regula el consumo de oxigeno, energia, frio y hambre) se define como DL/45, por lo que escala automaticamente junto con DL. El ritmo de consumo de recursos respecto a la duracion del dia queda igual que antes; solo se comprimio el tiempo total de la partida.
+AJUSTES RAPIDOS: para volver a 35 min totales, restaurar DL=300. Para otra duracion total en minutos (M), usar DL = (M*60)/DAYS.

@@ -1,0 +1,10 @@
+REGISTRO VERSION 5.0
+MODIFICACIONES SOBRE LA 4.9 (solo public/index.html):
+1. FINALES ANIMADOS (tomados del index v4.1) ahora en Luna y en Marte. Al terminar los 7 dias:
+   - Meta cumplida (reparaciones >= GOAL=8): el cohete aterriza junto a la base, el astronauta camina, sube por la rampa, el cohete despega. Cartel de felicitaciones.
+   - Meta no cumplida: anochece, aparece la Tierra y la Sala de Control escribe el mensaje con retraso de señal.
+   - Si el astronauta esta dentro de la base o bajo tierra, fundido a negro y vuelve en la superficie.
+2. MARTE usa la paleta del terreno marciano: cohete terracota/ocre, polvo rojizo, noche y fundidos rojizos, cartel marron-rojizo, retraso de señal Marte-Tierra mayor.
+3. Las muertes (vida, energia, oxigeno, traje) siguen con el cartel de texto.
+4. HUD: el contador de reparaciones usa GOAL (8).
+AJUSTES RAPIDOS: constante GOAL; paleta de Marte en MARSPAL / DUST / NIGHT / FADE.

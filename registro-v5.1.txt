@@ -1,0 +1,21 @@
+REGISTRO VERSION 5.1
+MODIFICACIONES SOBRE LA 5.0 (solo public/index.html; package.json con nuevo nombre/version):
+1. DAÑO POR AREA (asteroides): el impacto solo hiere al astronauta si esta a 1 bloque por cada lado del punto de impacto
+   (antes 3 bloques en horizontal y 4 en vertical). El cráter pasa de ~radio 2 a 3x3 bloques y la explosion visual se redujo acorde.
+2. GUIA DE INICIO (antes de empezar una partida nueva): 4 paginas (Items, Herramientas, Peligros, Controles/alertas).
+   El boton "Siguiente" / "Comenzar mision" solo aparece cuando se llega al final de la pagina (scroll). La primera vez por sesion es
+   obligatorio; en partidas siguientes de la misma sesion el boton aparece de inmediato (variable GDONE).
+   Los textos de herramientas y peligros se generan desde REC / EM, asi que se mantienen al dia si se cambian.
+3. ADVERTENCIAS: oxigeno <= 3 y defensa <= 3 muestran aviso rojo parpadeante en pantalla, linea roja en el HUD y un mensaje al cruzar el umbral.
+   Con defensa en 0 el aviso cambia a "Defensa agotada".
+4. DEFENSA EN 0 = CONGELACION: ya no mata al instante. Pierde 1 corazon (2 de vida) cada FRZ = 13.5 s mientras la defensa sea 0.
+   El contador (S.fz) se reinicia en cuanto la defensa vuelve a ser > 0. Dentro de la base la regeneracion de vida lo compensa.
+   Oxigeno y energia en 0 siguen terminando la mision como antes.
+5. POCA VIDA (<= 3 corazones): borde rojo pulsante alrededor del juego (mas fuerte con <= 2 corazones) y cuadro lateral
+   que explica como curarse (hielo -> base -> capsula medica). Cambia segun si el astronauta esta afuera o en el interior.
+   En pantallas anchas (>= 1120 px) el cuadro queda fuera del canvas, al costado.
+6. MANUAL DE SUPERVIVENCIA en el menu de pausa (Esc): pestañas Sobrevivir, Items, Herramientas, Peligros y Controles.
+7. PANTALLA COMPLETA: boton ⛶ sobre el juego y tecla F. Al volver al menu o cerrar sesion se sale de pantalla completa.
+   En iPhone/iPad (Safari) el navegador no permite pantalla completa en paginas web; se muestra un aviso.
+8. Correccion menor: al volver al menu se limpia el estado de juego (S=null) para que Esc/E ya no actuen sobre una partida cerrada.
+AJUSTES RAPIDOS: FRZ (segundos por corazon por congelacion), umbrales de avisos (S.o<=3, S.s<=3) en warns(), umbral de vida baja (S.hp<=6) en hud().

@@ -1,0 +1,8 @@
+REGISTRO BASE SHACKLETON - VERSION 4.4
+- Texturas procedurales (pixel art, cacheadas) para todos los bloques del exterior, con 4 variantes por tipo y borde en relieve:
+  regolito (guijarros y mini crateres), roca oscura (grietas), mineral (cristales con brillo), hielo (facetas y destellos).
+- Capa de polvo claro sobre la superficie y fondo texturado en las cuevas.
+- Fondo nuevo: cielo con degradado, 170 estrellas en 3 capas de profundidad con parpadeo (las mas grandes con destello en cruz).
+- 3 capas de monticulos con parallax (lejanos, medios y cercanos); los cercanos llevan crateres. Se repiten sin cortes al recorrer el mundo.
+- Marte usa su propia paleta: cielo rojizo, monticulos rojizos, estrellas mas tenues y texturas con los colores de Marte.
+- Interior de la base sin cambios.

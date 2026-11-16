@@ -1,0 +1,1 @@
+REGISTRO 5.6: traduccion EN completa verificada con prueba automatica (guia, manual, menu, pausa, emergencias + datos curiosos, items, etiquetas dibujadas en el canvas, fin de mision/causa de muerte). Textos de canvas via fillText/measureText. Modo Español sin cambios.

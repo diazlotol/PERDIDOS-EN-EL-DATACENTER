@@ -1,0 +1,7 @@
+REGISTRO VERSION 5.3 (sobre la 5.2; public/index.html, public/logo.jpg, package.json)
+1. INICIO: se quito el login. Ahora hay una pantalla con el logo (public/logo.jpg), boton "Jugar" y selector de idioma (Español / English US).
+2. MENU de Luna/Marte: se quito "Cerrar sesion". Ya no se usan cuentas (server.js y schema.sql quedan sin uso).
+3. IDIOMA: variable LANG (se recuerda en localStorage). Traducidos: inicio, menu, color del traje, avisos de mesa, fin de mision y causa de muerte. Falta: guia, manual, emergencias.
+4. MESA DE CRAFTEO: solo se puede construir FUERA de la base y a mas de 2 bloques de la puerta (NODOOR=2*T). Aviso en el menu de la mesa y al intentarlo.
+5. MISIONES: las emergencias que piden herramienta mayor salen al final: pico (roca, meteorito) desde el 35% de la partida, taladro (falla del generador) desde el 70%.
+6. MUERTE: el cartel final dice la causa (congelacion, onda de impacto, caida, sin vida, sin energia, sin oxigeno).

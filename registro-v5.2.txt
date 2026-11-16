@@ -1,0 +1,16 @@
+REGISTRO VERSION 5.2
+MODIFICACIONES SOBRE LA 5.1 (solo public/index.html; package.json con nueva version):
+1. ENERGIA: capacidad guardada de 15 (constante EMAX; oxigeno, defensa y vida mantienen MAX=12 / 20). La barra del HUD y la capsula de recarga usan 15.
+2. RECUPERACION SOLAR: con el panel al 100% de eficiencia vuelve 1 de energia cada 4.8 s reales (constante ERT). Escala con la eficiencia del panel.
+3. MAQUINARIA: la maquina de aire consume 2 de energia por uso (constante AIRE; antes 1). Textos de ayuda actualizados.
+   El taladro mantiene su consumo por bloque (0.5 por bloque) y la capsula medica/reparacion no gastan energia.
+4. MISIONES: la meta sube de 8 a 15 reparaciones (GOAL). Para que sea alcanzable, las emergencias aparecen mas seguido:
+   primera a los 40 s y luego cada 40 a 70 s (EGAP=[40,30]); antes cada 150 a 240 s (~6 por partida, insuficientes para 15).
+   Ahora salen unas 20 en los 18 minutos. Maximo 3 emergencias a la vez (sin cambios).
+5. PUERTA DE LA BASE: ninguna emergencia aparece a menos de 2 bloques de la puerta (spawnX); el "impacto en el casco" tampoco.
+   El rover no se puede bajar a menos de 3 bloques de la puerta (NODOOR) y la mesa de herramientas no se puede construir ahi
+   (boton deshabilitado con aviso). Para construir la mesa desde el interior hay que salir y alejarse de la puerta.
+6. TIEMPO DENTRO DE LA BASE: el tiempo siempre corrio dentro de la base, pero no se veia. Ahora el interior muestra la barra de progreso
+   del dia y un reloj "Dia n/7 · Dia/Noche · segundos restantes". El tiempo sigue pasando igual (comprobado).
+   Nota: los menus (mesa, inventario, pausa) siguen deteniendo el juego, como antes.
+AJUSTES RAPIDOS: EMAX, ERT, AIRE, GOAL, EGAP, NODOOR (constantes en la linea 65).

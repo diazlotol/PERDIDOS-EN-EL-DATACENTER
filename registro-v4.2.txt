@@ -1,0 +1,7 @@
+REGISTRO BASE SHACKLETON - VERSION 4.2
+- Lienzo 800x450 con pixel art sin suavizado. Exterior escalado x1.25.
+- Interior estilo Terraria segun especificacion: techo/paredes/piso/regolito por tiles, ventanal con estrellas y Tierra, 6 estaciones (esclusa, mesa de herramientas con fabricacion real, mesa de reparacion, terminal con alineacion de paneles, capsula de recarga, tanques O2).
+- Fisicas del interior: vx 2.9, salto -6.8, gravedad .28, caida maxima 8. Esclusa abierta + caminar a la izquierda = salir.
+- Tercer ambiente: Marte (tormenta de polvo, meteoritos, hematita, hielo, colores rojizos).
+- Rover lunar (E en la bahia): velocidad x2.2, dibujado con el codigo del paquete.
+- Mochila cohete visible en el astronauta con chorro de gas frio al saltar.

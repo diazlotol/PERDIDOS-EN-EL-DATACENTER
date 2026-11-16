@@ -1,0 +1,1 @@
+REGISTRO 5.4: inicio a pantalla completa con colores neon del logo (cyan/magenta/dorado); traduccion EN ampliada (avisos, emergencias, items) con traductor de texto en pantalla. Falta: guia, manual, parrafos del menu, datos curiosos.

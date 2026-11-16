@@ -1,0 +1,27 @@
+REGISTRO DEL PROYECTO: BASE SHACKLETON - VERSION 4.0
+===========================================================================
+MODIFICACIONES REALIZADAS EN ESTA VERSION:
+1. Arquitectura Full-Stack (Node.js + Express + PostgreSQL):
+   - Se creo server.js corriendo en puerto 5000 (evitando conflictos en 3000, 4000 y 4001).
+   - Esquema SQL (schema.sql) con tablas 'usuarios' y 'partidas' en JSONB.
+   - Login y registro con apodo unico y contrasena libre encriptada con bcrypt.
+
+2. Doble Inventario Intercambiable:
+   - Barra rapida (teclas 0 a 9) totalmente personalizable.
+   - Mochila de 6 espacios accesible con la tecla 'I' para guardar/sacar e intercambiar
+     objetos con la barra rapida 0-9.
+
+3. Paneles Solares Moviles, Reparables y Orientables:
+   - Indicadores de ubicacion de paneles en el minimapa (naranja = danado, celeste = operativo).
+   - Recoleccion con tecla 'E' para llevar paneles danados a la base y repararlos en la Mesa.
+   - Despliegue desde la barra 0-9 y orientacion angular hacia el Sol con tecla 'E' para
+     maximizar la eficiencia de carga electrica de la base.
+
+4. Preparacion de Interacciones 'E' para Base Interna y Vehiculos:
+   - Esclusa de ingreso a la base (S.inInterior) lista para cargar imagen personalizada.
+   - Bahia de vehiculo lunar con interaccion 'E' modulada para la proxima version.
+
+ERRORES CORREGIDOS DE LA VERSION 3.0:
+- Se elimino la duplicacion de funciones land() y mini()/mini2() en el script del juego.
+- Se corrigio el desfase de parallax (variable 'scr') al cruzar los bordes del mundo circular.
+- Se elimino la dependencia de localStorage sin respaldo, evitando perdida de datos entre sesiones.

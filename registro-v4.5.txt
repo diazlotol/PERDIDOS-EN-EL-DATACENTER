@@ -1,0 +1,14 @@
+REGISTRO BASE SHACKLETON - VERSION 4.5
+- Terreno generado por capas geologicas segun el planeta (en lugar de bloques al azar). Las partidas nuevas usan el mundo nuevo; las guardadas conservan el suyo.
+LUNA
+- Relieve: lomas suaves y 4 crateres con borde elevado.
+- Capas: regolito fino arriba -> brecha (regolito mezclado con roca, cada vez mas rocosa) -> basalto fracturado en profundidad.
+- Mineral: granos sueltos en el regolito y vetas dentro de la roca (algunas cerca de la base para empezar).
+- Hielo: solo en trampas frias bajo el fondo de los crateres (siempre en sombra) y en bolsas profundas.
+- Rocas sueltas en la superficie.
+MARTE
+- Relieve: dunas mas altas y 2 crateres.
+- Capas: polvo rojo -> estratos sedimentarios en bandas rojo/oscuro (ondulados, como en un canon) -> basalto.
+- Hematita en vetas y concreciones dentro de los estratos.
+- Hielo: lentes de permafrost bajo el suelo y bajo el fondo de los crateres (mas abundante que en la Luna).
+- Terreno sin escalones de mas de 1 bloque y zona de la base siempre plana.
