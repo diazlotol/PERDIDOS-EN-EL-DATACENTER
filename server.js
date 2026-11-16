@@ -1,6 +1,6 @@
 const express = require('express');
 const { Pool } = require('pg');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const cors = require('cors');
 const path = require('path');
 
@@ -9,12 +9,22 @@ app.use(cors());
 app.use(express.json({ limit: '2mb' }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-const pool = new Pool({
-  user: process.env.PGUSER || 'postgres',
-  host: process.env.PGHOST || 'localhost',
-  database: process.env.PGDATABASE || 'base_shackleton',
-  password: process.env.PGPASSWORD || 'postgres',
-  port: process.env.PGPORT || 5432,
+const pool = process.env.DATABASE_URL
+  ? new Pool({
+      connectionString: process.env.DATABASE_URL,
+      ssl: { rejectUnauthorized: false },
+      max: 3,
+    })
+  : new Pool({
+      user: process.env.PGUSER || 'postgres',
+      host: process.env.PGHOST || 'localhost',
+      database: process.env.PGDATABASE || 'base_shackleton',
+      password: process.env.PGPASSWORD || 'postgres',
+      port: process.env.PGPORT || 5432,
+    });
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 app.post('/api/register', async (req, res) => {
@@ -102,5 +112,10 @@ app.post('/api/clear-save', async (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Servidor Base Shackleton corriendo en http://localhost:${PORT}`));
+// En Vercel se exporta la app; en local se levanta el servidor normalmente.
+if (!process.env.VERCEL) {
+  const PORT = process.env.PORT || 5000;
+  app.listen(PORT, () => console.log(`Servidor Base Shackleton corriendo en http://localhost:${PORT}`));
+}
+
+module.exports = app;
